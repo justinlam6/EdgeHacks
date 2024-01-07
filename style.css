@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+
+.nav-icon {
+  margin-left: 4rem;
+}
+
+.nav-btn {
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.lead {
+}
+
+body {
+  padding-top: 3rem;
+}
+
+.cover-container {
+  min-height: 50vh; /* This is 150% of the viewport height */
+}
+
+body,
+.cover-container {
+  /* This will add a vertical scroll bar if the content overflows */
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.headers {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 90px;
+  padding-top: 310px;
+  margin: auto;
+  text-align: center;
+  font-weight: 700;
+  color: #e0e1dd;
+}
+
+.text {
+  color: #e0e1dd;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
+  font-weight: 200px;
+}
+
+.buttons {
+  font-size: 30px;
+  color: #e0e1dd;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
+  font-weight: 200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.gradient {
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
+    0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(
+      18% 28% at 18% 71%,
+      #ffffff59 6%,
+      #073aff00 100%
+    ),
+    radial-gradient(70% 53% at 36% 76%, #73f2ffff 0%, #073aff00 100%),
+    radial-gradient(42% 53% at 15% 94%, #ffffffff 7%, #073aff00 100%),
+    radial-gradient(18% 28% at 35% 87%, #ffffffff 7%, #073aff00 100%),
+    radial-gradient(
+      74% 86% at 67% 38%,
+      #add4edf5 1%,
+      #0077fff5 43%,
+      #1c00fff5 99%,
+      #073aff00 100%
+    ),
+    repeating-conic-gradient(
+      from 34deg at 50% 50%,
+      #4eb5ffff 1%,
+      #4c00fcff 100%
+    );
+}
+
+.section {
+  padding: 2rem;
+  background-color: #0d1b2a;
+}
+
+.btnborder {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  color: #1b263b;
+  text-align: center;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #1b263b;
+}
+
+.footnotes {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: white;
+  width: 100%;
+  margin: auto 0;
+  margin-top: 2 rem;
+  height: 2px;
+}
+
+.about {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+
+  color: #ffffff;
+}
+
+.gradient1 {
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(
+      49% 81% at 45% 47%,
+      #ffe20345 0%,
+      #073aff00 100%
+    ),
+    radial-gradient(113% 91% at 17% -2%, #8900ffff 1%, #ff000000 99%),
+    radial-gradient(142% 91% at 83% 7%, #ffdb00ff 1%, #ff000000 99%),
+    radial-gradient(142% 91% at -6% 74%, #ff0049ff 1%, #ff000000 99%),
+    radial-gradient(142% 91% at 111% 84%, #ff7000ff 0%, #ff0000ff 100%);
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sponsorbuttons:hover {
+  transform: scale(1.1);
+  margin-right: 40px;
+  margin-left: 26px;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
