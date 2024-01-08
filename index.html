@@ -36,6 +36,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
     <style>
       .navbar {
         font-family: "Lexend Deca", sans-serif;
@@ -74,6 +79,17 @@
         float: left;
         padding: 20px;
       }
+
+      #myCarousel {
+        width: 40%;
+        height: 30vh; /* Adjust as needed */
+        margin: auto;
+      }
+
+      .carousel-item {
+        position: relative;
+        top: 80px; /* Larger screens */
+      }
     </style>
 
     <script src="script.js"></script>
@@ -87,8 +103,8 @@
     >
       <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-          <div class="container-fluid">
-            <a class="navbar-brand navitem" href="#">edgehacks</a>
+          <div class="container-fluid container">
+            <a class="navbar-brand navitem" href="#">EdgeHacks</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -111,7 +127,7 @@
                   <a class="nav-link" href="#abouttp">about us</a>
                 </li>
                 <li class="nav-item navitem">
-                  <a class="nav-link" href="#">meet the team</a>
+                  <a class="nav-link" href="#teamtp">meet the team</a>
                 </li>
                 <li class="nav-item navitem">
                   <a
@@ -129,7 +145,12 @@
 
       <!-- cover -->
       <main class="px-3">
-        <h1 class="headers animate__animated animate__fadeIn">edgehacks</h1>
+        <h1
+          class="headers animate__animated animate__fadeIn"
+          style="text-align: center"
+        >
+          EdgeHacks
+        </h1>
         <p class="text animate__animated animate__fadeIn">
           non profit focused on the future of engineers
         </p>
@@ -150,158 +171,241 @@
       <!-- about us section -->
       <div class="about gradient1 float-container parallax" id="abouttp">
         <!-- about us text -->
-        <div class="float-child">
-          <h1 style="text-align: left; padding-left: 20rem">EDGE HACKS</h1>
-          <div style="display: inline; float: left">
-            <p style="font-size: 20px; text-align: left; padding-left: 20rem">
-              Founded in 2023, EdgeHacks is a student <br />
-              led-non profit focused on creating hackathons to <br />
-              improve coding abilities within the community.
-            </p>
+        <div class="container">
+          <div class="float-child">
+            <h1 style="text-align: left">EDGE HACKS</h1>
+            <div style="display: inline; float: left">
+              <p style="font-size: 20px; text-align: left">
+                Founded in 2023, EdgeHacks is a student <br />
+                led-non profit focused on creating hackathons to <br />
+                improve coding abilities within the community.
+              </p>
+            </div>
           </div>
         </div>
 
-        <!-- sponsor carousel -->
+        <!-- sponsor carousel
         <div
           id="myCarousel"
           class="carousel slide float-child text"
           data-bs-ride="carousel"
-          style="font-size: 1rem"
+          style="font-size: 1rem; width: 40%; min-height: 20%"
         >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+          <div class="container-fluid">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
 
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <svg
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                ></svg>
+                <div class="container">
+                  <div
+                    class="carousel-caption text-left align-items-center flex-md-column"
+                  >
+                    <h1>Our Mission</h1>
+                    <p class="opacity-75">
+                      The Winter 23/24 Hackathon invites young innovators to
+                      harness their talents and imagination to devise solutions
+                      tackling critical global challenges.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <svg
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                ></svg>
+                <div class="container">
+                  <div
+                    class="carousel-caption text-left align-items-center flex-md-column"
+                  >
+                    <h1>How can I join?</h1>
+                    <p class="opacity-75">
+                      To register you must initially sign up for the event via
+                      Devpost. After completing their registration, review the
+                      challenge and submission guidelines.
+                    </p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <svg
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                ></svg>
+                <div class="container">
+                  <div
+                    class="carousel-caption text-left align-items-center flex-md-column"
+                  >
+                    <h1>What do I submit?</h1>
+                    <p class="opacity-75">
+                      Participants are expected to upload their projects on
+                      Devpost, before the deadline, with a concise video
+                      demonstration and a pitch deck.
+                    </p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <svg
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                ></svg>
+                <div class="container">
+                  <div
+                    class="carousel-caption text-left align-items-left flex-md-column"
+                  >
+                    <h1>How do I decide what to build?</h1>
+                    <p class="opacity-75">
+                      Participants should craft innovative solutions poised to
+                      foster positive change within their communities and on a
+                      larger scale.
+                    </p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <button
+              class="carousel-control-prev"
               type="button"
               data-bs-target="#myCarousel"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-inner" style="padding: 0px; margin: auto">
-            <div class="carousel-item active">
-              <svg
-                aria-hidden="true"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              ></svg>
-              <div class="container">
-                <div class="carousel-caption text-start">
-                  <h1>Our Mission</h1>
-                  <p class="opacity-75">
-                    The EdgeHacks Winter 23/24 Hackathon invites young
-                    innovators to harness their talents and imagination to
-                    devise solutions tackling critical global challenges.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <svg
-                aria-hidden="true"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              ></svg>
-              <div class="container">
-                <div class="carousel-caption text-start">
-                  <h1>How can I join?</h1>
-                  <p class="opacity-75">
-                    To register you must initially sign up for the event via
-                    Devpost. After completing their registration, review the
-                    challenge and submission guidelines.
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <svg
-                aria-hidden="true"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              ></svg>
-              <div class="container">
-                <div class="carousel-caption text-start">
-                  <h1>What do I submit?</h1>
-                  <p class="opacity-75">
-                    Participants are expected to upload their projects on
-                    Devpost, before the deadline, with a concise video
-                    demonstration and a pitch deck.
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <svg
-                aria-hidden="true"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              ></svg>
-              <div class="container">
-                <div class="carousel-caption text-start">
-                  <h1>How do I decide what to build?</h1>
-                  <p class="opacity-75">
-                    Participants should craft innovative solutions poised to
-                    foster positive change within their communities and on a
-                    larger scale.
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
+      </div> -->
       </div>
 
+     
+      <section class="team" id="teamtp">
+        <div class="center">
+          <h1 class="text" style="padding: 0rem">meet the team</h1>
+          <p class="text" style="opacity: 0.9;">
+            EdgeHacks Winter 23/24
+          </p>
+        </div>
+
+        <div class="team-content">
+          <div class="box">
+            <img src="assets/2.jpg" />
+            <h3>Evan He</h3>
+            <h5>Co - Director</h5>
+            <div class="icons">
+              <a href="https://popeyeschicken.ca/" target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="assets/4.png" />
+            <h3>Aaron Su</h3>
+            <h5>Co - Director</h5>
+            <div class="icons">
+              <a
+                href="https://www.linkedin.com/in/aaron-su-6b67682a8/"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="assets/3.png" />
+            <h3>Karan Channey</h3>
+            <h5>Co - Director</h5>
+            <div class="icons">
+              <a
+                href="https://www.linkedin.com/in/karan-channey-1957162a8/"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="assets/1.jpg" />
+            <h3>Justin Lam</h3>
+            <h5>Finance/Marketing Executive</h5>
+            <div class="icons">
+              <a
+                href="https://www.linkedin.com/in/justinlam747/"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
       <!-- footer -->
-      <footer class="footer" style="padding-bottom: 3rem">
-        <p class="footnotes">
-          @2024 EdgeHacks, made by
-          <a href="https://www.linkedin.com/in/justinlam747/" class="footnotes"
-            >Justin Lam</a
-          >
-        </p>
-      </footer>
+      
     </div>
+    <footer class="footer" style="padding-bottom: 3rem">
+      <p class="footnotes">
+        @2024 EdgeHacks, made by
+        <a href="https://www.linkedin.com/in/justinlam747/" class="footnotes"
+          >Justin Lam</a
+        >
+      </p>
+    </footer>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
