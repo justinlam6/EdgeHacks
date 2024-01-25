@@ -16,6 +16,7 @@
   text-align: center;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+  max-width: 100%;
 }
 
 .lead {
@@ -33,6 +34,7 @@ body,
 .cover-container {
   /* This will add a vertical scroll bar if the content overflows */
 }
+
 
 .example::-webkit-scrollbar {
   display: none;
@@ -81,8 +83,9 @@ body,
 }
 
 html {
+  max-width: 100%;
   scroll-behavior: smooth;
-  overflow-x: none;
+  overflow-x: hidden;
   
 }
 
@@ -283,6 +286,14 @@ a {
 	cursor: pointer; 
   
 }
+.middle {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 300%;
+    padding-top: 10rem;
+    text-align: center;
+    font-weight: 700;
+    color: #e0e1dd;
+}
 
 @media(max-width: 1240px){
 	.team{
@@ -307,6 +318,15 @@ a {
     font-weight: 700;
     color: #e0e1dd;
     scale: 1.2;
+  }
+
+  .middle {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 300%;
+    padding-top: 10rem;
+    text-align: center;
+    font-weight: 700;
+    color: #e0e1dd;
   }
 
   .about{
