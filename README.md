@@ -1,2 +1,0 @@
-# EdgeHacks
-EdgeHacks Website
